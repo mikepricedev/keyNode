@@ -3,7 +3,7 @@ const CHILDREN:unique symbol = Symbol('Child Keys Lib');
 const DEPTH:unique symbol = Symbol('Depth Cache');
 const PARENTS:unique symbol = Symbol('Parents Cache');
 
-export default abstract class KeyNode<Tself extends KeyNode = any> extends String {
+export abstract class BaseKeyNode<Tself extends BaseKeyNode = any> extends String {
 
   readonly IS_ROOT_KEY:boolean;
   readonly PARENT:Tself;
@@ -182,3 +182,5 @@ export default abstract class KeyNode<Tself extends KeyNode = any> extends Strin
   }
 
 }
+
+export class KeyNode extends BaseKeyNode<KeyNode> {}

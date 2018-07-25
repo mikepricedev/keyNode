@@ -2,7 +2,7 @@ export declare const ROOT_KEYS: unique symbol;
 declare const CHILDREN: unique symbol;
 declare const DEPTH: unique symbol;
 declare const PARENTS: unique symbol;
-export default abstract class KeyNode<Tself extends KeyNode = any> extends String {
+export declare abstract class BaseKeyNode<Tself extends BaseKeyNode = any> extends String {
     readonly IS_ROOT_KEY: boolean;
     readonly PARENT: Tself;
     protected readonly [ROOT_KEYS]?: Map<string, Tself>;
@@ -22,5 +22,7 @@ export default abstract class KeyNode<Tself extends KeyNode = any> extends Strin
     children(): IterableIterator<Tself>;
     parents(): IterableIterator<Tself>;
     siblings(): IterableIterator<Tself>;
+}
+export declare class KeyNode extends BaseKeyNode<KeyNode> {
 }
 export {};

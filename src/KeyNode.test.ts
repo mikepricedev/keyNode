@@ -1,9 +1,7 @@
 import {expect} from 'chai';
-import BaseKeyNode from './KeyNode';
+import {KeyNode} from './KeyNode';
 
-class KeyNode extends BaseKeyNode<KeyNode> {}
-
-describe(`KeyNode (abstract)`,()=>{
+describe(`KeyNode`,()=>{
 
   let rootKeyLib = new Map<string, KeyNode>();
 

@@ -52,12 +52,6 @@ export abstract class BaseKeyNode<Tself extends BaseKeyNode = any> extends Strin
 
   }
 
-  get parent(){
-
-    return this.PARENT;
-
-  }
-
   get [Symbol.toStringTag]() {
   
     return this.constructor.name;

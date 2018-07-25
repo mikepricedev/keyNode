@@ -11,7 +11,6 @@ export declare abstract class BaseKeyNode<Tself extends BaseKeyNode = any> exten
     private [PARENTS];
     constructor(key: string, parent: Tself | Map<string, Tself>);
     readonly isTerminalKey: boolean;
-    readonly parent: Tself;
     readonly [Symbol.toStringTag]: string;
     readonly numChildren: number;
     readonly depth: number;

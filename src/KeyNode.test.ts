@@ -81,17 +81,6 @@ describe(`KeyNode`,()=>{
 
     });
 
-    describe(`parent`,()=>{
-
-      it(`Returns parent key.`,()=>{
-
-        expect(fooKey).property('parent').to.be.null;
-        expect(fooBazKey).property('parent').to.equal(fooKey);
-
-      });
-
-    });
-
     describe(`numChildren`,()=>{
 
       it(`Returns number of children keys.`,()=>{

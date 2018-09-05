@@ -22,6 +22,6 @@
     "typescript": "^2.9.2"
   },
   "dependencies": {
-    "path-notation": "github:raptor9g/pathNotation#v1.0.0"
+    "path-notation": "github:raptor9g/pathNotation#v1.0.1"
   }
 }

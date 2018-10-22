@@ -1,6 +1,6 @@
 {
   "name": "key-node",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Tree Node for key in object path hierarchies.",
   "main": "build/index.js",
   "scripts": {
